@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Roboto:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Nunito&family=Roboto:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+html {
+  height: auto;
+}
+body {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: rgba(22, 22, 22, 255);
+}
+
+header {
+  display: flex;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  width: 100%;
+  color: #f5f5f5;
+  font-family: "Roboto", sans-serif;
+  font-size: 19px;
+}
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  list-style: none;
+}
+nav ul li {
+  display: grid;
+  justify-content: center;
+  align-items: flex-end;
+}
+nav ul a {
+  text-decoration: none;
+  color: #f5f5f5;
+  font-size: 15px;
+}
+.span__new {
+  padding: 5px;
+}
+.span__new small {
+  background-image: linear-gradient(
+    to right,
+    rgba(251, 149, 75, 1),
+    rgba(165, 56, 129, 1)
+  );
+  padding: 4px 6px;
+  font-size: 8px;
+  border-radius: 10px;
+}
+.list__new {
+  display: grid;
+  text-align: right;
+}
+nav button {
+  background-image: linear-gradient(
+    to right,
+    rgba(165, 56, 129, 1),
+    rgba(231, 46, 62, 1),
+    rgba(251, 149, 75, 1)
+  );
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: #f5f5f5;
+  width: 150px;
+  height: 50px;
+  border-radius: 5px;
+}
+.login__div {
+  display: grid;
+  justify-content: center;
+  margin: 5rem 0 0 0;
+}
+.login__text {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: calc(35px + (35 - 18) * ((100vw - 300px) / (1600 - 300)));
+  margin-bottom: 10px;
+}
+.choose__text {
+  color: #6e6e6e;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 2;
+}
+.flex__div {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 0 0;
+}
+.block-div {
+  display: grid;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+.span__div {
+  display: grid;
+  align-self: center;
+  margin: 0 40px;
+}
+.span__divide {
+  font-size: 40px;
+  color: #6b6d70;
+  height: 100%;
+}
+
+.div_left > input {
+  padding: 20px;
+  background: #222222;
+  border: none;
+  width: 400px;
+  height: 65px;
+  border-radius: 5px;
+}
+.div_left > input::placeholder {
+  color: rgba(151, 151, 151, 255);
+  font-size: 15px;
+  font-weight: bold;
+}
+.div_left > a {
+  background-image: linear-gradient(
+    to right,
+    rgba(165, 56, 129, 1),
+    rgba(231, 46, 62, 1),
+    rgba(251, 149, 75, 1)
+  );
+  color: #ffffff;
+  padding: 20px;
+  font-family: sans-serif;
+  font-weight: 600;
+  height: 65px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.div_right > a {
+  display: grid;
+  justify-content: left;
+  align-content: center;
+  font-family: Nunito;
+  font-weight: 400;
+  font-size: 17px;
+  height: 65px;
+  width: 400px;
+  color: #ffffff;
+  background: #222222;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+.btn{
+    border: 1px solid;
+    border-image-slice: 1;
+    border-width: 2px;
+    padding: 0 20px;
+
+}
+.first-btn__border{
+    border-image-source: linear-gradient(to right, rgba(165, 56, 129, 1), rgba(251, 149, 75, 1));
+}
+.second-btn__border{
+    border-image-source: linear-gradient(to left, rgba(165, 56, 129, 1), rgba(251, 149, 75, 1));
+}
+.third-btn__border{
+    border-image-source: linear-gradient(to right, rgba(165, 56, 129, 1), rgba(251, 149, 75, 1));
+}
+
+.forget__div{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    margin: 5rem 0;
+}
+.forget__div a {
+    font-family: Nunito;
+    color: #fcfcfc;
+    font-size: 20px;
+    font-weight: bolder;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    margin-bottom: 30px;
+}
+footer a{
+    color: #6e6e6e;
+    font-family: Nunito;
+    font-size: 17px;
+    font-weight: 400;
+}
