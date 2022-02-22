@@ -5,58 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="grid.css">
+
     <title>login page</title>
 </head>
 
 <body>
 
     <header>
-        <nav>
+        <nav class="first__nav">
             <p>Tract.</p>
             <ul>
-                <li> <a href="">Category</a> </li>
-                <li> <a href="">Tract For Business</a></li>
+                <li> <a class="nav_link nav_border-gradient" href="">Category</a> </li>
+                <li> <a class="nav_link nav_border-gradient" href="">Tract For Business</a></li>
                 <li class="list__new">
-                    <div class="span__new">
-                        <small>New</small>
-                    </div>
 
-                    <a href="">
-                       Teach on tract
+
+                    <a class="nav_link nav_border-gradient" href="">
+                        <div class="span__new">
+                            <i class="fa-regular fa-alicorn"></i>
+                            <small>New</small>
+                        </div>
+                        Teach on tract
                     </a>
                 </li>
             </ul>
 
             <button> Sign up</button>
+
         </nav>
     </header>
 
+
+    <div class="toggle__div">
+        <div class="toggle" id="hamburgerBtn" onclick="openSideMenu()">
+            <span class="toggle-bar toggle-bar-1"></span>
+            <span class="toggle-bar toggle-bar-2"></span>
+            <span class="toggle-bar toggle-bar-3"></span>
+            <span class="toggle-bar toggle-bar-4"></span>
+        </div>
+     <div class="toggle__nav-logo">
+        <p>Tract.</p>
+     </div>
+    </div>
+
+
+
+
+    <!-- #navbar for the toggle on small screens -->
+    <nav id="primaryNav" class="hide">
+        <ul class="sideMenu">
+            <li class="create"><a href="">Catergory</a></li>
+            <li class="create"><a href="">Tract For Business</a></li>
+            <li class="create">
+                <a href="">Teach on tracts</a>
+            </li>
+
+            <button> Sign up</button>
+        </ul>
+    </nav>
+
+
     <div class="login__div">
         <p class="login__text">Login to Your Account</p>
-        <p class="choose__text">Choose from 130,000 Online Video Courses with new additons <br> published every second month</p>
+        <p class="choose__text">Choose from 130,000 Online Video Courses with new additons <br> published every second
+            month</p>
     </div>
 
     <div class="flex__div">
 
-            <div class="block-div div_left">
-                <input type="text" placeholder="Teacher/Student ID">
-                <input type="text" placeholder="8 Digit Pin">
-                <a>Login to Your Account</a>
-            </div>
-            <div class="span__div">
-                <span class="span__divide">/</span>
-            </div>
+        <div class="block-div div_left">
+            <input type="text" placeholder="Teacher/Student ID">
+            <input type="text" placeholder="8 Digit Pin">
+            <a>Login to Your Account</a>
+        </div>
+        <div class="span__div">
+            <span class="span__divide">/</span>
+        </div>
 
 
 
-           <div class="block-div div_right">
-            <a class="btn first-btn__border">Sign in with Google</a>
+        <div class="block-div div_right">
+            <a class="btn first-btn__border"><i class="fa-brands fa-google"></i>Sign in with Google</a>
             <a class="btn second-btn__border">Sign in with Facebook</a>
             <a class="btn third-btn__border">Sign in with Apple Account</a>
-           </div>
-
         </div>
+
+    </div>
 
 
     <div class="forget__div">
@@ -68,8 +105,8 @@
         <a>Copyright@Tract2021</a>
     </footer>
 
-
-
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="custom.js"></script>
 
 </body>
 
