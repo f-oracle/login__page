@@ -45,6 +45,7 @@ nav ul a {
   text-decoration: none;
   color: #f5f5f5;
   font-size: 15px;
+  padding-bottom: 8px;
 }
 .nav_link:hover,
 .nav_link:focus,
@@ -52,7 +53,9 @@ nav ul a {
   border-bottom: 1px solid;
   border-image-slice: 1;
   border-bottom-width: 2px;
-  //   outline: 0;
+  transform: scale(1.4);
+  transition: 0.3s;
+  color: #f02c2c;
 }
 .nav_border-gradient:hover,
 .nav_border-gradient:focus,
@@ -68,13 +71,14 @@ nav ul a {
 
 .sideMenu {
   //   background-image: linear-gradient(to right, #385aa5, #2ee765, #fb954b);
-  background: #ec4a8d;
+  background: #f3335d;
   padding-left: 0;
   padding-top: 15px;
   padding-bottom: 12px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-radius: 5px;
 }
 .hide {
   display: none;
@@ -94,7 +98,7 @@ nav ul a {
   padding: 5px;
 }
 
-.span__new small {
+span small {
   background-image: linear-gradient(
     to right,
     rgba(251, 149, 75, 1),
@@ -104,6 +108,7 @@ nav ul a {
   font-size: 8px;
   border-radius: 10px;
 }
+
 .list__new {
   display: grid;
   text-align: right;
@@ -151,7 +156,7 @@ nav button {
 .block-div {
   display: grid;
   flex-wrap: nowrap;
-  gap: 15px;
+  gap: 17px;
 }
 .span__div {
   display: grid;
@@ -169,6 +174,14 @@ nav button {
   width: 320px;
   height: 65px;
   border-radius: 5px;
+}
+
+.div_left > input:hover,
+.div_left > input:focus,
+.div_left > input:active
+{
+border: 2px solid #f02c2c !important;
+outline: #f02c2c;
 }
 .div_left > input::placeholder {
   color: rgba(151, 151, 151, 255);
@@ -196,9 +209,9 @@ nav button {
 }
 
 .div_right > a {
-  display: grid;
+  display: flex;
   justify-content: left;
-  align-content: center;
+  align-items: center;
   font-family: Nunito;
   font-weight: 400;
   font-size: 17px;
@@ -208,12 +221,28 @@ nav button {
   background: #222222;
   border-radius: 10px;
   cursor: pointer;
+  gap: 0 10px;
 }
+.fa-brands{
+    font-weight: bolder;
+}
+
+input.empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+#iconified{
+    color: #ffffff !important;
+}
+
 .btn {
   border: 1px solid;
   border-image-slice: 1;
   border-width: 2px;
   padding: 0 20px;
+
 }
 .first-btn__border {
   border-image-source: linear-gradient(

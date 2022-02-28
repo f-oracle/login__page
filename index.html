@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="grid.css">
+    <script src="https://use.fontawesome.com/f931415a8f.js"></script>
 
     <title>login page</title>
 </head>
@@ -21,12 +22,13 @@
                 <li> <a class="nav_link nav_border-gradient" href="">Category</a> </li>
                 <li> <a class="nav_link nav_border-gradient" href="">Tract For Business</a></li>
                 <li class="list__new">
-
-
-                    <a class="nav_link nav_border-gradient" href="">
+                    <span>
+                        <small>New</small>
+                    </span>
+                   <a class="nav_link nav_border-gradient" href="">
                         <div class="span__new">
-                            <i class="fa-regular fa-alicorn"></i>
-                            <small>New</small>
+                            <!-- <i class="fa-regular fa-alicorn"></i> -->
+
                         </div>
                         Teach on tract
                     </a>
@@ -77,9 +79,9 @@
     <div class="flex__div">
 
         <div class="block-div div_left">
-            <input type="text" placeholder="Teacher/Student ID">
+            <input type="text" class="empty" id="iconified" placeholder="Teacher/Student ID  &#xf140">
             <input type="text" placeholder="8 Digit Pin">
-            <a>Login to Your Account</a>
+            <a class="login_link">Login to Your Account</a>
         </div>
         <div class="span__div">
             <span class="span__divide">/</span>
@@ -88,9 +90,9 @@
 
 
         <div class="block-div div_right">
-            <a class="btn first-btn__border"><i class="fa-brands fa-google"></i>Sign in with Google</a>
-            <a class="btn second-btn__border">Sign in with Facebook</a>
-            <a class="btn third-btn__border">Sign in with Apple Account</a>
+            <a class="btn first-btn__border"><i class="fa fa-brands fa-google"></i>Sign in with Google</a>
+            <a class="btn second-btn__border"><i class="fa fa-brands fa-facebook-f"></i>Sign in with Facebook</a>
+            <a class="btn third-btn__border"><i class="fa fa-brands fa-apple"></i>Sign in with Apple Account</a>
         </div>
 
     </div>
@@ -106,6 +108,7 @@
     </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script src="custom.js"></script>
 
 </body>
