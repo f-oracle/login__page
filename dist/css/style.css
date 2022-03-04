@@ -193,6 +193,32 @@ nav button {
   font-weight: 300;
   font-size: 12px;
   line-height: 2;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s;
+  /* Firefox */
+  -webkit-animation: fadein 5s;
+  /* Safari and Chrome */
+  -o-animation: fadein 5s;
+  /* Opera */
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .flex__div {
@@ -274,6 +300,12 @@ nav button {
   height: 65px;
   border-radius: 5px;
   cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .div_left {
@@ -299,7 +331,6 @@ nav button {
   height: 65px;
   width: 320px;
   color: #ffffff;
-  background: #222222;
   border-radius: 10px;
   cursor: pointer;
   gap: 0 10px;

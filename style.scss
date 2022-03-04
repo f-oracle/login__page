@@ -147,7 +147,45 @@ nav button {
   font-weight: 300;
   font-size: 12px;
   line-height: 2;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+
 }
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 .flex__div {
   display: grid;
   justify-content: center;
@@ -178,10 +216,9 @@ nav button {
 
 .div_left > input:hover,
 .div_left > input:focus,
-.div_left > input:active
-{
-border: 2px solid #f02c2c !important;
-outline: #f02c2c;
+.div_left > input:active {
+  border: 2px solid #f02c2c !important;
+  outline: #f02c2c;
 }
 .div_left > input::placeholder {
   color: rgba(151, 151, 151, 255);
@@ -202,6 +239,8 @@ outline: #f02c2c;
   height: 65px;
   border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .div_left {
   margin-bottom: 30px;
@@ -218,23 +257,23 @@ outline: #f02c2c;
   height: 65px;
   width: 320px;
   color: #ffffff;
-  background: #222222;
+  //   background: #222222;
   border-radius: 10px;
   cursor: pointer;
   gap: 0 10px;
 }
-.fa-brands{
-    font-weight: bolder;
+.fa-brands {
+  font-weight: bolder;
 }
 
 input.empty {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
 }
-#iconified{
-    color: #ffffff !important;
+#iconified {
+  color: #ffffff !important;
 }
 
 .btn {
@@ -242,7 +281,6 @@ input.empty {
   border-image-slice: 1;
   border-width: 2px;
   padding: 0 20px;
-
 }
 .first-btn__border {
   border-image-source: linear-gradient(

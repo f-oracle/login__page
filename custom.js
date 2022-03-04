@@ -46,3 +46,5 @@ gsap.from("input, .btn , .login_link", {
 
 //   animation for the texts
 // gsap.to(".choose__text", { duration: 2.5, ease: "power1.inOut", y: -50 });
+gsap.to("#signup", {duration: 2, x: -40, ease: "bounce"});
+
