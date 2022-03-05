@@ -15,7 +15,7 @@
     margin-bottom: 0px;
   }
   .div_left > input {
-    padding: 20px;
+    padding:0px 20px;
     background: #222222;
     border: none;
     width: 400px;
